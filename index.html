@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>아는남자5 — 손그림 포트폴리오 &amp; 저널</title>
+  
+  <!-- 손글씨 & 귀여운 감성 폰트 (Gaegu, Nanum Pen Script, Kalam, Caveat) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Gaegu:wght@400;700&family=Kalam:wght@400;700&family=Nanum+Pen+Script&family=Pretendard:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 스케치북 종이 텍스처 & 모눈 그리드 배경 -->
+  <div class="paper-grid-bg"></div>
+
+  <!-- 상단 손그림 네비게이션 바 -->
+  <header class="doodle-navbar">
+    <div class="nav-inner">
+      <a href="#home" class="hand-logo">
+        <span class="pencil-doodle">✏️</span>
+        <span class="logo-text">아는남자5's Journal</span>
+      </a>
+
+      <nav class="hand-nav-links">
+        <a href="#about"><span class="nav-num">①</span> 소개</a>
+        <a href="#projects"><span class="nav-num">②</span> 프로젝트</a>
+        <a href="#journey"><span class="nav-num">③</span> 삶의 여정</a>
+        <a href="#interests"><span class="nav-num">④</span> 관심분야</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- 칠판/스케치북 다크모드 토글 -->
+        <button id="themeToggle" class="hand-tool-btn" title="스케치북 / 칠판 모드 전환">
+          <span class="theme-icon light-icon">🌙 칠판 모드</span>
+          <span class="theme-icon dark-icon">☀️ 낮 모드</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="journal-wrapper">
+    <!-- 다이어리 스케치북 시트 -->
+    <div class="sketchbook-sheet">
+      <!-- 상단 마스킹 테이프 장식 -->
+      <div class="washi-tape tape-top-center"></div>
+      <div class="washi-tape tape-top-right"></div>
+
+      <!-- 1. 첫 화면: 영감 가득한 핸드드로잉 히어로 섹션 -->
+      <section id="home" class="hero-doodle-section">
+        
+        <!-- 좌측 핑크 포스트잇 (자기소개 & 모토) -->
+        <div class="doodle-postit postit-pink rotate-neg">
+          <div class="tape-strip"></div>
+          <div class="postit-badge">WHO AM I? 🧪</div>
+          <p class="postit-content">
+            "제약 연구실의 정밀함과 일상의 자유로움 사이에서 나만의 답을 찾아가는 연구원입니다."
+          </p>
+          <div class="postit-foot">
+            <svg class="hand-drawn-heart" viewBox="0 0 24 24">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+            <span class="hand-tag">@knowing_man_5</span>
+          </div>
+        </div>
+
+        <!-- 중앙 메인 타이틀: 형광펜 & 손글씨 -->
+        <div class="hero-center-title">
+          <div class="mini-sparkle-top">✦ PORTFOLIO &amp; ARCHIVE ✦</div>
+          <div class="highlighter-box">
+            <h1 class="main-hand-title">아는남자5</h1>
+            <!-- 손그림 빛 번짐 라인 -->
+            <div class="burst-line left-burst">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="burst-line right-burst">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+          <h2 class="sub-hand-title">제약업계에 종사하는 연구원 🔬</h2>
+
+          <!-- 마인드셋 알약 모양 배너 -->
+          <div class="mindset-pill-badge">
+            <span class="pill-spark">✧</span>
+            <span>호기심으로 탐구하고, 유쾌하게 기록하는 삶의 여정</span>
+            <span class="pill-spark">✧</span>
+          </div>
+
+          <!-- 바로가기 손그림 버튼들 -->
+          <div class="hero-hand-buttons">
+            <a href="#projects" class="doodle-btn btn-yellow">📂 프로젝트 보기</a>
+            <a href="#journey" class="doodle-btn btn-green">📖 일기 &amp; 여정 체크</a>
+          </div>
+        </div>
+
+        <!-- 우측 구름 모양 말풍선 (한 줄 소개: ?!) -->
+        <div class="doodle-cloud-box rotate-pos">
+          <div class="cloud-header">THE POWER MOTTO:</div>
+          <div class="cloud-quote">"?!"</div>
+          <p class="cloud-desc">
+            질문(?)에서 시작해<br/>
+            놀라운 느낌표(!)를 만드는<br/>
+            나만의 시그니처 한 줄 소개.
+          </p>
+          <svg class="hand-drawn-star" viewBox="0 0 24 24">
+            <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" />
+          </svg>
+        </div>
+      </section>
+
+      <!-- 손그림 구분선 -->
+      <div class="doodle-divider"></div>
+
+      <!-- 2. 소개 섹션 (About Me - 3개의 손그림 카드 레이아웃) -->
+      <section id="about" class="section-container">
+        <div class="section-title-tag">
+          <span class="sparkle-icon">✨</span>
+          <h2>ABOUT ME : 연구와 일상의 밸런스</h2>
+          <span class="sparkle-icon">✨</span>
+        </div>
+
+        <div class="three-doodle-cards">
+          <!-- 카드 1: 연구원으로서의 나 -->
+          <div class="hand-card card-lavender">
+            <div class="card-pin">📌</div>
+            <div class="card-sketch-header header-purple">
+              <h3>🧪 제약 연구원</h3>
+            </div>
+            <p class="card-txt-main">
+              정확한 데이터와 엄격한 프로토콜 속에서 <strong>생명과 건강에 기여하는 연구</strong>를 수행하고 있습니다.
+            </p>
+            <p class="card-txt-sub">
+              눈앞의 결과에 일희일비하지 않고 끈기 있게 가설을 증명해 나가는 단단함을 배웁니다.
+            </p>
+            <div class="card-bottom-icon">
+              <!-- 비커 손그림 SVG -->
+              <svg viewBox="0 0 50 50" class="svg-micro-doodle">
+                <path d="M 18 10 L 32 10 M 25 10 L 25 22 L 12 40 C 10 44 14 46 18 46 L 32 46 C 36 46 40 44 38 40 L 25 22" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <line x1="16" y1="36" x2="34" y2="36" stroke="#B794E6" stroke-width="2.5" stroke-dasharray="3 2"/>
+                <circle cx="20" cy="32" r="2" fill="#B794E6"/>
+                <circle cx="28" cy="28" r="1.5" fill="#B794E6"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- 카드 2: 모토와 협업 태도 -->
+          <div class="hand-card card-yellow-glow">
+            <div class="card-pin">⭐</div>
+            <div class="card-sketch-header header-pink">
+              <h3>💡 질문과 느낌표</h3>
+            </div>
+            <ul class="doodle-bullet-list">
+              <li><span class="b-dot pink"></span> <strong>? (Question)</strong> : 당연한 것에 안주하지 않고 끊임없이 묻기</li>
+              <li><span class="b-dot pink"></span> <strong>! (Exclamation)</strong> : 몰입 끝에 마주하는 통찰의 짜릿함</li>
+              <li><span class="b-dot pink"></span> <strong>협업</strong> : 솔직하고 유쾌한 소통으로 함께 성장하기</li>
+            </ul>
+            <div class="card-callout-bottom">
+              <span>"단순히 일하는 연구원이 아닌, 재미있게 해내는 동료"</span>
+            </div>
+          </div>
+
+          <!-- 카드 3: 일상의 활력 -->
+          <div class="hand-card card-sky">
+            <div class="card-pin">🎵</div>
+            <div class="card-sketch-header header-blue">
+              <h3>🕺 즐거움과 재충전</h3>
+            </div>
+            <p class="card-txt-main">
+              연구실 밖에서는 <strong>사람들과의 솔직한 대화와 음악</strong>을 진심으로 즐깁니다.
+            </p>
+            <p class="card-txt-sub">
+              스트레스를 유쾌하게 비워낼 때 다음 날 연구에 몰입할 수 있는 긍정의 힘이 샘솟습니다!
+            </p>
+            <div class="card-bottom-icon">
+              <!-- 음표 & 만세 손그림 SVG -->
+              <svg viewBox="0 0 50 50" class="svg-micro-doodle">
+                <circle cx="16" cy="36" r="5" fill="#6DAFE5" stroke="#222" stroke-width="2"/>
+                <circle cx="36" cy="30" r="5" fill="#6DAFE5" stroke="#222" stroke-width="2"/>
+                <line x1="21" y1="36" x2="21" y2="14" stroke="#222" stroke-width="2.5"/>
+                <line x1="41" y1="30" x2="41" y2="8" stroke="#222" stroke-width="2.5"/>
+                <path d="M 21 14 L 41 8 L 41 15 L 21 21 Z" fill="#222"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 손그림 구분선 -->
+      <div class="doodle-divider"></div>
+
+      <!-- 3. 프로젝트 섹션 (Projects - 2개의 손그림 프로젝트 카드 & 팝업) -->
+      <section id="projects" class="section-container">
+        <div class="section-title-tag">
+          <span class="sparkle-icon">🧪</span>
+          <h2>PROJECTS : 현재 진행 중인 연구 프로젝트</h2>
+          <span class="sparkle-icon">🧪</span>
+        </div>
+        <p class="section-sub-hand">※ 카드를 클릭하면 상세한 해결 과제와 역할 정보를 확인할 수 있습니다.</p>
+
+        <div class="project-doodle-grid">
+          
+          <!-- 프로젝트 1 카드 -->
+          <article class="project-sketch-card card-mint" onclick="openProjectModal(1)">
+            <div class="tape-corner"></div>
+            <div class="proj-badge-row">
+              <span class="status-stamp">On-going</span>
+              <span class="proj-number">#PROJECT 01</span>
+            </div>
+            <h3 class="proj-title">Unknown</h3>
+            <p class="proj-desc">
+              제약 연구 환경에서 당면한 기술적 과제를 분석하고 새로운 솔루션을 모색 중인 첫 번째 핵심 프로젝트입니다.
+            </p>
+            <div class="proj-mini-table">
+              <div class="row"><span>해결한 문제</span> <strong>On-going</strong></div>
+              <div class="row"><span>맡은 역할</span> <strong>On-going</strong></div>
+              <div class="row"><span>실제 결과</span> <strong>On-going</strong></div>
+            </div>
+            <div class="proj-click-hint">
+              <span>상세 보기 모달 열기 🔍</span>
+              <span class="hand-arrow">➔</span>
+            </div>
+          </article>
+
+          <!-- 프로젝트 2 카드 -->
+          <article class="project-sketch-card card-orange" onclick="openProjectModal(2)">
+            <div class="tape-corner"></div>
+            <div class="proj-badge-row">
+              <span class="status-stamp">On-going</span>
+              <span class="proj-number">#PROJECT 02</span>
+            </div>
+            <h3 class="proj-title">Unknown</h3>
+            <p class="proj-desc">
+              신뢰성 높은 데이터 도출을 위해 가설을 수립하고 체계적인 검증을 단계별로 밟아가고 있는 두 번째 연구 프로젝트입니다.
+            </p>
+            <div class="proj-mini-table">
+              <div class="row"><span>해결한 문제</span> <strong>On-going</strong></div>
+              <div class="row"><span>맡은 역할</span> <strong>On-going</strong></div>
+              <div class="row"><span>실제 결과</span> <strong>On-going</strong></div>
+            </div>
+            <div class="proj-click-hint">
+              <span>상세 보기 모달 열기 🔍</span>
+              <span class="hand-arrow">➔</span>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- 손그림 구분선 -->
+      <div class="doodle-divider"></div>
+
+      <!-- 4. 삶의 여정 & 일기 (Life & Journey - 5단계 발자취 플로우 & 일상 기록) -->
+      <section id="journey" class="section-container">
+        <div class="section-title-tag">
+          <span class="sparkle-icon">🗺️</span>
+          <h2>MY JOURNEY &amp; LOG : 삶의 발자취와 하루 기록</h2>
+          <span class="sparkle-icon">🗺️</span>
+        </div>
+
+        <!-- 5단계 여정 플로우 (핀터레스트 원본 이미지의 5-Step 재현) -->
+        <div class="journey-steps-flow">
+          
+          <div class="j-step">
+            <div class="j-step-num num-pink">1</div>
+            <h4>과거의 시작</h4>
+            <div class="j-arrow">➔</div>
+            <p>기초 학문과 연구에 대한 열정으로 첫걸음을 내딛던 시간</p>
+            <div class="j-icon">🌱</div>
+          </div>
+
+          <div class="j-step">
+            <div class="j-step-num num-green">2</div>
+            <h4>연구실 입문</h4>
+            <div class="j-arrow">➔</div>
+            <p>실제 제약 현장에서 장비와 데이터를 다루며 실전 연구 역량 축적</p>
+            <div class="j-icon">🔬</div>
+          </div>
+
+          <div class="j-step current-step">
+            <div class="j-step-num num-purple">3</div>
+            <h4>현재 : On-going</h4>
+            <div class="j-arrow">➔</div>
+            <p>Unknown 프로젝트 수행 &amp; 음주가무로 워라밸 균형 잡기</p>
+            <div class="j-icon">⚡</div>
+          </div>
+
+          <div class="j-step">
+            <div class="j-step-num num-blue">4</div>
+            <h4>결실 &amp; 증명</h4>
+            <div class="j-arrow">➔</div>
+            <p>진행 중인 과제의 유의미한 결실 도출과 협업 네트워크 확장</p>
+            <div class="j-icon">🎯</div>
+          </div>
+
+          <div class="j-step">
+            <div class="j-step-num num-orange">5</div>
+            <h4>앞으로의 여정</h4>
+            <p>신뢰받는 시니어 연구원이자 좋은 사람으로 단단하게 살아가기</p>
+            <div class="j-icon">🌅</div>
+          </div>
+
+        </div>
+
+        <!-- 하단: 일상 다이어리 기록장 & 체크리스트 (2열 박스) -->
+        <div class="bottom-dual-board">
+          
+          <!-- 좌측: 성장 & 실천 체크리스트 (직접 체크 가능!) -->
+          <div class="hand-card card-green-board">
+            <div class="board-title">
+              <h3>✅ 연구원 아는남자5의 데일리 다짐</h3>
+            </div>
+            <div class="checklist-items" id="dailyChecklist">
+              <label class="check-box-label">
+                <input type="checkbox" checked />
+                <span class="doodle-chk">✔</span>
+                <span class="chk-text">실험 데이터 꼼꼼하게 더블체크하기</span>
+              </label>
+              <label class="check-box-label">
+                <input type="checkbox" checked />
+                <span class="doodle-chk">✔</span>
+                <span class="chk-text">풀리지 않는 문제 앞에서 호기심(?) 잃지 않기</span>
+              </label>
+              <label class="check-box-label">
+                <input type="checkbox" checked />
+                <span class="doodle-chk">✔</span>
+                <span class="chk-text">동료들과 따뜻하고 솔직한 대화 나누기</span>
+              </label>
+              <label class="check-box-label">
+                <input type="checkbox" checked />
+                <span class="doodle-chk">✔</span>
+                <span class="chk-text">퇴근 후 나만의 음악과 휴식으로 충전하기</span>
+              </label>
+            </div>
+            <div class="board-cheer">
+              <span>"오늘도 나만의 페이스로 한 걸음 전진!" ⭐</span>
+            </div>
+          </div>
+
+          <!-- 우측: 나만의 일기 & 메모장 (LocalStorage 자동 보존) -->
+          <div class="hand-card card-pink-board">
+            <div class="board-title">
+              <h3>📝 오늘의 생각 &amp; 하루 일기</h3>
+              <span class="mini-save-tag">브라우저 자동 저장</span>
+            </div>
+            <div class="memo-write-row">
+              <input type="text" id="journalInput" placeholder="오늘의 연구 메모, 하루 소회, 번뜩인 아이디어를 적어보세요..." />
+              <button id="addJournalBtn" class="doodle-btn btn-pink">기록 남기기 ✏️</button>
+            </div>
+            <ul class="journal-memo-list" id="journalList">
+              <!-- 자바스크립트로 동적 렌더링 -->
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 손그림 구분선 -->
+      <div class="doodle-divider"></div>
+
+      <!-- 5. 관심 분야 섹션 (Interests - 음주가무) -->
+      <section id="interests" class="section-container">
+        <div class="section-title-tag">
+          <span class="sparkle-icon">🍶</span>
+          <h2>INTERESTS : 음주가무 (飮酒歌舞)</h2>
+          <span class="sparkle-icon">🎶</span>
+        </div>
+
+        <div class="interest-sketch-banner">
+          <div class="drink-icon-group">
+            <span class="emoji-bounce">🍶</span>
+            <span class="emoji-bounce delay-1">🍻</span>
+            <span class="emoji-bounce delay-2">🎶</span>
+            <span class="emoji-bounce delay-3">🕺</span>
+          </div>
+
+          <h3 class="interest-headline">"치열하게 연구하고, 유쾌하게 풍류를 즐기다"</h3>
+          <p class="interest-intro">
+            제약 연구원으로서의 삶은 수많은 데이터와 정밀한 검증의 연속입니다. 
+            그렇기에 일과를 마친 뒤, 좋은 사람들과 마주 앉아 술 한잔을 기울이고 좋아하는 노래와 흥겨운 리듬에 몸을 맡기는 <strong>'음주가무'</strong>는 제게 단순한 취미 이상의 특별한 힐링입니다.
+          </p>
+
+          <div class="interest-three-pillars">
+            <div class="pillar-box">
+              <div class="pillar-emoji">🍶</div>
+              <h4>飮酒 (음주) : 솔직한 소통</h4>
+              <p>술잔을 기울이며 격식의 벽을 허물고 동료 및 친구들과 나누는 사람 냄새 나는 솔직한 대화</p>
+            </div>
+            <div class="pillar-box">
+              <div class="pillar-emoji">🎵</div>
+              <h4>歌 (가) : 음악과 감성</h4>
+              <p>지친 하루의 긴장을 풀어주고 영감을 불어넣어 주는 선율과 함께 부르는 노래</p>
+            </div>
+            <div class="pillar-box">
+              <div class="pillar-emoji">🕺</div>
+              <h4>舞 (무) : 자유로운 에너지</h4>
+              <p>복잡한 생각과 스트레스를 신나게 털어내고 내일의 에너지를 가득 채우는 유쾌한 흥</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 푸터 배너: 손글씨 마무리 -->
+      <footer class="journal-footer-banner">
+        <div class="footer-hand-line">
+          <span class="f-star">★</span>
+          <span>RESEARCH DILIGENTLY.</span>
+          <span class="f-arrow">➔</span>
+          <span class="f-bold">LIVE PASSIONATELY!</span>
+          <span class="f-heart">💖</span>
+        </div>
+        <p class="footer-copy">&copy; <span id="currentYear"></span> 아는남자5. Handcrafted with curious mind &amp; joy.</p>
+      </footer>
+    </div>
+  </main>
+
+  <!-- 프로젝트 상세 보기 모달 창 (스케치북 스타일) -->
+  <div id="projectModal" class="doodle-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-dim-backdrop" onclick="closeProjectModal()"></div>
+    <div class="modal-doodle-content">
+      <div class="tape-strip modal-tape"></div>
+      <button class="modal-x-btn" onclick="closeProjectModal()" aria-label="닫기">&times;</button>
+      
+      <div class="modal-head">
+        <span class="status-stamp modal-stamp">On-going</span>
+        <h3 id="modalTitle" class="modal-proj-name">Unknown</h3>
+      </div>
+
+      <div class="modal-info-list">
+        <div class="modal-info-card">
+          <h4>🎯 해결한 문제</h4>
+          <p id="modalProblem">On-going</p>
+        </div>
+        <div class="modal-info-card">
+          <h4>🧪 내가 맡은 역할</h4>
+          <p id="modalRole">On-going</p>
+        </div>
+        <div class="modal-info-card">
+          <h4>📊 실제 결과</h4>
+          <p id="modalResult">On-going</p>
+        </div>
+        <div class="modal-note-box">
+          <p>💡 본 연구 과제는 현재 활발히 진행 중(On-going)이며, 추후 새로운 데이터 및 성과가 정리되는 대로 업데이트될 예정입니다.</p>
+        </div>
+      </div>
+
+      <div class="modal-foot-btn">
+        <button class="doodle-btn btn-yellow" onclick="closeProjectModal()">닫기 닫기 ✨</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
